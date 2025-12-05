@@ -1,0 +1,198 @@
+@charset "UTF-8";
+/* -----------------------------------------------------------
+   ARCHIVO PRINCIPAL (MAIN)
+   Aquí importamos todos los parciales en orden específico.
+----------------------------------------------------------- */
+html {
+  scroll-behavior: smooth;
+}
+
+.hero {
+  background-image: radial-gradient(circle, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.8) 100%), url("../img/tennis-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  color: #ffffff;
+  position: relative;
+}
+.hero__title {
+  font-family: "Anton", sans-serif;
+  font-size: 4rem;
+  text-transform: uppercase;
+  line-height: 0.9;
+  letter-spacing: 2px;
+  margin-bottom: 1rem;
+}
+@media (min-width: 768px) {
+  .hero__title {
+    font-size: 7rem;
+  }
+}
+.hero__subtitle {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  opacity: 0.9;
+}
+@media (min-width: 768px) {
+  .hero__subtitle {
+    font-size: 1.2rem;
+  }
+}
+
+.info-bar {
+  background-color: #f4f1ea;
+  color: #1a1a1a;
+  padding: 3rem 0;
+}
+.info-bar__label, .info-bar__value {
+  font-family: "Anton", sans-serif;
+  text-transform: uppercase;
+  line-height: 1.2;
+  margin-bottom: 0.5rem;
+}
+.info-bar__label {
+  font-size: 1.5rem;
+}
+@media (min-width: 768px) {
+  .info-bar__label {
+    font-size: 3rem;
+  }
+}
+.info-bar__value {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+@media (min-width: 768px) {
+  .info-bar__value {
+    font-size: 3rem;
+  }
+}
+.info-bar__value span.small {
+  display: block;
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  letter-spacing: 2px;
+  margin-top: -5px;
+}
+
+.strength-section {
+  background-color: #F2F2F2;
+  padding-bottom: 5rem;
+}
+.strength-section__title {
+  font-family: "Anton", sans-serif;
+  font-size: 4rem;
+  line-height: 0.9;
+  color: #1a1a1a;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+  padding-top: 3rem;
+}
+@media (min-width: 768px) {
+  .strength-section__title {
+    font-size: 7rem;
+  }
+}
+.strength-section__card {
+  display: block;
+  position: relative;
+  height: 500px;
+  border-radius: 50px;
+  overflow: hidden;
+  text-decoration: none;
+  color: white;
+  background-image: url("../img/strength-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.3s ease;
+}
+.strength-section__card:hover {
+  transform: scale(0.98);
+}
+.strength-section__overlay {
+  background-color: rgba(0, 0, 0, 0.3);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.strength-section__inner-title {
+  font-family: "Anton", sans-serif;
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  line-height: 0.9;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+}
+@media (min-width: 768px) {
+  .strength-section__inner-title {
+    font-size: 6rem;
+  }
+}
+.strength-section__small-text {
+  position: absolute;
+  bottom: 20px;
+  left: 40px;
+  text-align: left;
+  font-family: "Roboto", sans-serif;
+  font-size: 0.9rem;
+  opacity: 0.8;
+  display: none;
+}
+@media (min-width: 768px) {
+  .strength-section__small-text {
+    display: block;
+  }
+}
+
+.contact-section {
+  background-color: rgb(0, 0, 0);
+  color: white;
+  padding: 5rem 0;
+}
+.contact-section__title {
+  font-family: "Anton", sans-serif;
+  font-size: 4rem;
+  text-transform: uppercase;
+  margin-bottom: 4rem;
+}
+@media (min-width: 768px) {
+  .contact-section__title {
+    font-size: 6rem;
+  }
+}
+.contact-section__label {
+  font-family: "Roboto", sans-serif;
+  font-size: 0.9rem;
+  margin-bottom: 5px;
+  display: block;
+}
+.contact-section__input {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  color: white;
+  padding: 10px 0;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+.contact-section__input:focus {
+  border-bottom: 1px solid white;
+}
+.contact-section__textarea {
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  color: white;
+  padding: 1rem;
+  outline: none;
+  resize: none;
+}
+.contact-section__textarea:focus {
+  border-color: white;
+}/*# sourceMappingURL=main.css.map */

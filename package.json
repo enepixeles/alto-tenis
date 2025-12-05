@@ -1,0 +1,16 @@
+{
+  "name": "ejercicio-sass-7-1",
+  "version": "1.0.0",
+  "description": "Ejercicio práctico de SASS con patrón 7-1",
+  "scripts": {
+    "sass:watch": "sass --watch scss/main.scss css/main.css",
+    "sass:build": "sass scss/main.scss css/main.css --style compressed",
+    "serve": "live-server .",
+    "start": "npm-run-all --parallel sass:watch serve"
+  },
+  "devDependencies": {
+    "sass": "^1.69.0",
+    "live-server": "^1.2.2",
+    "npm-run-all": "^4.1.5"
+  }
+}

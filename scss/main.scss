@@ -1,0 +1,28 @@
+/* -----------------------------------------------------------
+   ARCHIVO PRINCIPAL (MAIN)
+   Aquí importamos todos los parciales en orden específico.
+----------------------------------------------------------- */
+
+// 1. ABSTRACTS
+// (Configuraciones que no generan CSS por sí mismas, pero son usadas por otros)
+@import 'abstracts/variables';
+@import 'abstracts/mixins';
+
+// 2. BASE
+// (Estilos base del sitio, reseteos y tipografía general)
+@import 'base/reset';
+@import 'base/typography';
+
+// 3. COMPONENTS
+// (Pequeños bloques reutilizables como botones, tarjetas, etc.)
+@import 'components/cards';
+
+// 4. LAYOUT
+// (Estructuras grandes de la página como header, footer o secciones principales)
+@import 'layout/page'; 
+
+// 5. PAGES
+// (Estilos muy específicos de una vista en particular)
+// Aquí es donde probablemente pusimos el código de la sección Hero que hicimos antes
+@import 'pages/exercise';
+@import 'pages/home';
